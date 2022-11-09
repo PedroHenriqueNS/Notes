@@ -1,0 +1,7 @@
+{
+  "name": "OneNote",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

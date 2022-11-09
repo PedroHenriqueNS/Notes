@@ -1,0 +1,132 @@
+.content {
+    display: block;
+
+    height: 90%;
+
+    overflow-y: auto
+
+}
+
+#linha_alinhada {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+}
+
+#ionIcon_div_backHome {
+    display: flex;
+    position: absolute;
+    align-items: center;
+
+    left: 0;
+
+    height: 100%;
+}
+
+#ionIcon_div_threeVertcDots {
+    display: flex;
+    position: absolute;
+    align-items: center;
+
+    right: 0;
+
+    height: 100%;
+}
+
+#ionIcon_backHome {
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+
+    left: 0%;
+}
+
+#ionIcon_threeVertcDots {
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+
+    right: 0;
+
+    height: 100%;
+}
+
+#sectionTexto {
+    display: contents;
+
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow-y: auto
+
+}
+ion-textarea {
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: row;
+
+    bottom: 0;
+
+    width: 100%;
+    height: 10%;
+
+    border: solid;
+    border-width: 1px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-color: white;
+}
+
+#text_DataDeCriacao {
+    padding-left: 20px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+
+    left: 0;
+
+    height: 100%;
+}
+
+span+span {
+    margin-left: 10px;
+}
+
+#footerIcon {
+    display: flex;
+    position: absolute;
+    align-items: center;
+
+    right: 0;
+
+    height: 100%;
+}
+
+#footerIcon_microfone {
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+#footerIcon_camera {
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+}

@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <div id="linha_alinhada">
+      <div id="ionIcon_div_backHome">
+        <ion-icon name="arrow-back-outline" routerLink="/home" id="ionIcon_backHome"></ion-icon>
+      </div>
+      <div id="ionIcon_div_threeVertcDots">
+        <ion-icon name="ellipsis-vertical-outline" (click)="presentActionSheet()" id="ionIcon_threeVertcDots">
+        </ion-icon>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="content">
+    <header>
+      <ion-input placeholder="Título" value="{{notas.titulo}}" id="titulo"></ion-input>
+    </header>
+    <section id="sectionTexto">
+      <ion-textarea 
+        type="text" 
+        placeholder="Digite alguma coisa" 
+        rows="30" 
+        value="{{notas.texto}}" 
+        id="texto">
+      </ion-textarea>
+    </section>
+  </div>
+  <footer>
+    <div id="text_DataDeCriacao">
+      <span>
+        <p>Data de criação:</p>
+      </span>
+      <span>
+        <p>none</p>
+      </span>
+    </div>
+    <div id="footerIcon">
+      <ion-icon name="camera-outline" (click)="abrirCamera()" id="footerIcon_camera"></ion-icon>
+      <ion-icon name="mic-outline" (click)="usarMicrofone()" id="footerIcon_microfone"></ion-icon>
+    </div>
+  </footer>
+</ion-content>

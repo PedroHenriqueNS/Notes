@@ -1,0 +1,35 @@
+<ion-header [translucent]="true" onload="reloadDados()">
+  <ion-toolbar>
+    <ion-title>
+      <div class="singleLine">
+        <ion-avatar slot="start" style="display: flex; align-items:center;"><img alt="Silhouette of a person's head"
+            src="https://ionicframework.com/docs/img/demos/avatar.svg " style="width: 40px; height: auto;" />
+        </ion-avatar>
+        <h1 style="padding-left: 20px;">Meu Bloco de Notas</h1>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card color="primary" *ngFor="let notas of dadosNotas" [routerLink]="['/notes', notas.id]">
+    <ion-card-header>
+      <ion-card-title>{{notas.titulo}}</ion-card-title>
+      <ion-card-title *ngIf="notas.titulo == ''">Titulo</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>{{notas.texto}}</ion-card-content>
+    <ion-card-content *ngIf="notas.texto == ''">Texto</ion-card-content>
+  </ion-card>
+
+  <footer>
+    <div (click)="criarNota()" id="newPage">
+      <span>
+        <ion-icon name="add" id="ionIcon_criarNota"></ion-icon>
+      </span>
+      <span>
+        <p id="newNota">Nota</p>
+      </span>
+    </div>
+  </footer>
+</ion-content>
