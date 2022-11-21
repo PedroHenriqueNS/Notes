@@ -17,6 +17,7 @@
     <header>
       <ion-input placeholder="Título" value="{{notas.titulo}}" id="titulo"></ion-input>
     </header>
+    <hr>
     <section id="sectionTexto">
       <ion-textarea 
         type="text" 
@@ -27,18 +28,4 @@
       </ion-textarea>
     </section>
   </div>
-  <footer>
-    <div id="text_DataDeCriacao">
-      <span>
-        <p>Data de criação:</p>
-      </span>
-      <span>
-        <p>none</p>
-      </span>
-    </div>
-    <div id="footerIcon">
-      <ion-icon name="camera-outline" (click)="abrirCamera()" id="footerIcon_camera"></ion-icon>
-      <ion-icon name="mic-outline" (click)="usarMicrofone()" id="footerIcon_microfone"></ion-icon>
-    </div>
-  </footer>
 </ion-content>
