@@ -36,8 +36,6 @@ export class NotesPage implements OnInit {
     const valueTexto = inputTexto?.value;
 
     
-
-    //console.log(this.id + " aa " + valueTitulo + " bb " + valueTexto);
     this.servico.salvarNota(this.id, valueTitulo, valueTexto);
   }
 

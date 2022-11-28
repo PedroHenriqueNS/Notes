@@ -18,7 +18,7 @@
       <ion-card-title *ngIf="notas.titulo == ''">Titulo</ion-card-title>
     </ion-card-header>
 
-    <ion-card-content>{{notas.texto}}</ion-card-content>
+    <ion-card-content>{{notas.texto | slice:0:40}}<span *ngIf="notas.texto.length > 40">...</span></ion-card-content>
     <ion-card-content *ngIf="notas.texto == ''">Texto</ion-card-content>
   </ion-card>
 
